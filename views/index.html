@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Backend Challenges | Free Code Camp</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container">
+        <h1>URL Shortener Microservice</h1>
+        <p>Please write url with <code>[http/https]</code></p>
+        <h2>Example how to create</h2>
+        <a href="https://3-url-shortener-fcc-ivan.glitch.me/new_url/https://stackoverflow.com"><span>https://3-url-shortener-fcc-ivan.glitch.me</span><span style="color:green">/new_url/</span><span style="color:red">https://stackoverflow.com</span></a>
+        <h2>Example of outputs</h2>
+        <p>For correct url:</p>
+        <pre>
+{
+  "original_url": "https://stackoverflow.com",
+  "short_url": "https://3-url-shortener-fcc-ivan.glitch.me/blbu1o"
+}
+        </pre>
+        <br>
+        <p>For incorrect url:</p>
+        <pre>
+{
+  "error": "Wrong url format"
+}
+        </pre>
+        <h2>Example of usage</h2>
+        <p>Put <code><a href="https://3-url-shortener-fcc-ivan.glitch.me/blbu1o">https://3-url-shortener-fcc-ivan.glitch.me<span style="color:red">/blbu1o</span></a></code> in browser and it will be redirect to <code>https://stackoverflow.com</code></p>
+        <p>For non existing short url:</p>
+        <pre>
+{
+  "error": "There is no this url in db"
+}
+        </pre>
+        <h2>GitHub Repo: <a href="https://github.com/kontic/3-url-shortener-fcc-ivan.git">LINK</a> </h2>
+          
+     </div>
+   </body>
+
+</html>
